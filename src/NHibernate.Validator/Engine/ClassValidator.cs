@@ -6,7 +6,8 @@ using System.Globalization;
 using System.Reflection;
 using System.Resources;
 using System.Runtime.Serialization;
-
+using System.Security;
+using NHibernate.Collection;
 using NHibernate.Mapping;
 using NHibernate.Properties;
 using NHibernate.Validator.Constraints;
@@ -15,7 +16,6 @@ using NHibernate.Validator.Interpolator;
 using NHibernate.Validator.Mappings;
 using NHibernate.Validator.Util;
 using Environment=NHibernate.Validator.Cfg.Environment;
-using NHibernate.Collection;
 
 namespace NHibernate.Validator.Engine
 {
@@ -838,6 +838,7 @@ namespace NHibernate.Validator.Engine
 		//}
 
 
+		[SecurityCritical]
 		public void GetObjectData(SerializationInfo info, StreamingContext context)
 		{
 			info.AddValue("interpolator", userInterpolatorType);

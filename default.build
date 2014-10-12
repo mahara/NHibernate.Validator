@@ -22,7 +22,7 @@
 		Supported versions of .NET Framework, separated by spaces.
 		Used by *-all-frameworks targets.
 	-->
-  <property name="supported.frameworks" value="net-4.5" />
+  <property name="supported.frameworks" value="net-4.0" />
 
   <fileset id="buildfiles.all" basedir="src">
 		<include name="NHibernate.Validator/default.build" />
