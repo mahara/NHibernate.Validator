@@ -29,7 +29,7 @@ namespace NHibernate.Validator.Engine
 					result = GetExternalDefinitionFor(clazz);
 					if (result == null)
 					{
-						log.Warn(string.Format("External definition not foud for class {0} in ValidatorMode.UseExternal mode.", clazz.FullName));
+						log.Warn(string.Format("External definition not found for class {0} in ValidatorMode.UseExternal mode.", clazz.FullName));
 						return null; // <<<<<===
 					}
 					break;

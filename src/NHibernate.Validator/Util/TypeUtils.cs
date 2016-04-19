@@ -108,7 +108,7 @@ namespace NHibernate.Validator.Util
 			catch(Exception e)
 			{
 				throw new InvalidStateException(
-					string.Format("Could not get property value:{0} of {1}", member.Name, member.ReflectedType), e);
+					string.Format("Could not get property value: {0} of {1}", member.Name, member.ReflectedType), e);
 			}
 			return null;
 		}
@@ -137,7 +137,7 @@ namespace NHibernate.Validator.Util
 					return ((MemberExpression) ((UnaryExpression) expression.Body).Operand).Member;
 				}
 				throw new HibernateValidatorException(
-					string.Format("Invalid expression type: Expected ExpressionType.MemberAccess, Found {0}", expression.Body.NodeType));
+					string.Format("Invalid expression type: Expected ExpressionType.MemberAccess, found {0}", expression.Body.NodeType));
 			}
 			return ((MemberExpression)expression.Body).Member;
 		}

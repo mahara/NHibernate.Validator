@@ -16,11 +16,11 @@ namespace NHibernate.Validator.Exceptions
 		}
 
 		public InvalidStateException(InvalidValue[] invalidValues, String className)
-			: base("validation failed for: " + className)
+			: base(string.Format("Validation failed for: {0}. ", className))
 		{
 			_invalidValues = invalidValues;
 		}
-        
+
 		public InvalidValue[] GetInvalidValues() 
 		{
 			return _invalidValues;
