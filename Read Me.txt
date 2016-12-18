@@ -1,0 +1,28 @@
+﻿SHA-1: ac39eac4c7fdbdcb609756cc9712c0cf37ad5588
+
+* Fixed various build and tests issues:
+- Added NAnt from NHibernate project (previously ignored by .gitignore)
+- Updated NUnit to version 2.6.3
+- Signed (strong-named) assemblies
+- Decorated ISerializable.GetObjectData(SerializationInfo info, StreamingContext context) with [SecurityCritical] attribute in several implementations
+- Changed some build parameters
+- Changed SQL Server address for tests to not use SQL Server Express
+- Added NuGet.exe
+- Updated NHibernate.Validator.nuspec
+- Added .editorconfig from NHibernate project
+- Updated .gitignore to ignore several files and folders
+
+SHA-1: fe186308d5623fafe2048c35a481c44a33b47d5b
+
+* Fixed typos.
+
+SHA-1: 6871c3bb580f6f095576b9fb2205ecc7eaa8bab3
+
+* Upgraded solution/projects files to VS2015.
+
+SHA-1: 2a3050ca312d33a9926874c7f42271ecb6b136bc
+
+* Updated Nuget spec.
+
+
+
